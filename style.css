@@ -141,13 +141,14 @@ main {
   color: #001d3d;
   border-radius: 20px;
   width: 100%;
-  height: 4vh;
+  height: auto;
   padding: 0 20px;
   line-height: 2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #list > li:hover{
