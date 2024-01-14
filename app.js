@@ -73,7 +73,7 @@ let updateListVotes = () => {
 
   listElPara.forEach((el, idx) => {
     el.parentNode.addEventListener("click", () => {
-      el.innerText = votes[idx]++;
+      el.innerText = ++votes[idx];
     });
   });
 };
