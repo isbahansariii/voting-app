@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+.animate{
+  animation: toAnimate 1s ease-in-out 0s ;
+}
+@keyframes toAnimate {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 100;
+    transform: translateY(0px);
+  }
+}
+.animateX{
+  animation: toAnimateX 0.5s ease-in-out 0s ;
+}
+@keyframes toAnimateX {
+  0%{
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100%{
+    opacity: 100;
+    transform: translateX(0px);
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #001d3d, #000814, #003566);
+  height: 100vh;
+  color: #e7b200;
+}
+
+#header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to top, #000000, #001d3d);
+}
+
+#header > i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 4px;
+}
+#header > i:hover {
+  background-color: #333333;
+}
+#head-h1 {
+  line-height: 5rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 90vh;
+}
+#addName {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  gap: 0.7%;
+}
+
+#name {
+  background-color: #ffffff;
+  height: 40%;
+  width: 40%;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0px 2px grey;
+}
+
+#submit {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 2px grey;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#submit:hover {
+  background-color: #e7b200;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  background: linear-gradient(#001d3d, #000814, #003566);
+  border: 8px solid #000814;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+  width: 30vw;
+  padding: 10px 0;
+}
+
+#box1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+
+#box2 {
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 20px;
+  list-style-position: inside;
+  font-size: 1.2rem;
+}
+#list {
+  border-radius: 20px;
+  padding: 10px;
+  padding-top: 0;
+  width: 100%;
+}
+#list > li {
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  color: #001d3d;
+  border-radius: 20px;
+  width: 100%;
+  height: 4vh;
+  padding: 0 20px;
+  line-height: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#list > li:hover{
+  background-color: #e7b200;
+  color: #ffffff;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  #name {
+    height: 30%;
+  }
+  #container {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 900px) {
+  #name {
+    width: 50%;
+  }
+  #container {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 730px) {
+  #container {
+    width: 55vw;
+  }
+}
+
+@media (max-width: 550px) {
+  #name {
+    width: 75%;
+  }
+  #container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 450px) {
+  #container {
+    width: 90vw;
+  }
+}

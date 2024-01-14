@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Voting App</title>
+  </head>
+  <body>
+    <div id="header">
+      <i class="fa-solid fa-house" id="home" title="home"></i>
+      <h1 id="head-h1">Voting App</h1>
+      <i class="fa-solid fa-circle-plus" id="add" title="Add Candidates"></i>
+    </div>
+
+    <main>
+      <div id="addName">
+        <input
+          type="text"
+          id="name"
+          placeholder="Add Candidates"
+          value=""
+          class="hide"
+        />
+        <button type="submit" id="submit" class="hide" title="submit">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </div>
+
+      <div id="container" class="animate">
+        <div id="box1">
+          <h3>Candidates</h3>
+        </div>
+
+        <!-- array -->
+        <div id="box2">
+          <ol id="list">
+            <li class="list-el">Darisha<p class="vote">0</p></li>
+            <li class="list-el">Wahab<p class="vote">0</p></li>
+            <li class="list-el">Asif<p class="vote">0</p></li>
+            <li class="list-el">Babar<p class="vote">0</p></li>
+            <li class="list-el">Fizza<p class="vote">0</p></li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
